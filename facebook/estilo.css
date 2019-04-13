@@ -1,0 +1,33 @@
+#contenedor{
+background: lightgreen;
+height: 100vh;
+display: grid;
+grid-template-rows: 85px 1fr 250px;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+#header{
+    background: lavender;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/4;
+    grid-row: 1;
+    text-align: center
+}
+
+#contenido{
+    background: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+
+}
+
+#footer{
+    background: lightgoldenrodyellow;
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 3
+}

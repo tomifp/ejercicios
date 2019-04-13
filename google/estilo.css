@@ -1,0 +1,63 @@
+#contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr 50px;
+    height: 100vh
+}
+
+#header{
+    /* no me acuerdo como poner todo a la derecha */ 
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background: red;
+}
+#page1{
+    display: grid;
+    grid-column: 2;
+    grid-row: 2/3;
+    background:lightgrey;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.titulo{
+    font-size: 100px;
+}
+
+.buscador{
+    height: 50px;
+    width: 500px;
+}
+
+#page2{
+    display: grid;
+    grid-column: 2;
+    grid-row: 3/4;
+    background: purple;
+    align-content: center;
+    justify-content: center;
+    height: 110%;
+}
+
+.icos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+.icos div{
+    align-items: stretch;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    background: lightblue;
+}
+
+#footer{
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 5;
+    background: pink;
+}
